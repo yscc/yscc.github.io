@@ -1,0 +1,25 @@
+
+
+markdown: kramdown 
+kramdown:
+  input: GFM
+  extensions:
+    - autolink
+    - footnotes
+    - smart
+  enable_coderay: true
+  syntax_highlighter: rouge
+  syntax_highlighter_opt:
+    line_numbers:  nil
+ 
+highlighter: 'pygments'
+#paginate: 8
+permalink: /:title
+
+title: NSP
+description: NSP
+category: 分类
+keys: 关键字
+url: http://yanshuicc.github.io
+feed: /atom.xml
+author_info: <a href="http://yscc.xyz">yscc</a>
