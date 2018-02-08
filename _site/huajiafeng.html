@@ -8,7 +8,7 @@
     * Revised:        Yscc
     -->
     <meta charset="utf-8" />
-    <title>NSP</title>
+    <title>华佳烽 | NSP</title>
     <meta name="author" content="Yscc" />
     <meta name="renderer" content="webkit">
     <meta name="description" content="Everything about Yscc" />
@@ -78,85 +78,63 @@
         </script>
 <!--End home_menu-->
     </div>
-<!--home.html-->
-<!--dump/index.md-->
-<div class="index-content dump">
-    <div class="section">
-        <ul class="artical-cate">
-            <li class="on"><a href="/"><span>导师</span></a></li>
-            <li style="text-align:center"><a href="/worker"><span>员工</span></a></li>
-            <li style="text-align:right"><a href="/student"><span>学生</span></a></li>
-        </ul>
-        <div class="cate-bar">
-            <span id="cateBar"></span>
-        </div>
+<link rel="stylesheet" href="/js/prettify/prettify.css" />
+<style type="text/css">
+    body { background:#e8e8e8; }
+    @media screen and (max-width: 750px){
+        body { background:#fff; }
+    }
+    @media screen and (max-width: 1020px){
+        body { background:#fff; }
+    }
+</style>
+
+<div id="content">
+    <div class="entry">
+        <h1 class="entry-title"><a href="/huajiafeng" title="华佳烽">华佳烽</a></h1>
+        <p class="entry-date">更新日期：2018-02-08</p>
+        
+
+    </div>
+
+    <div class="sidenav">
+        <h2>导师</h2>
         <ul class="artical-list">
         
-            <li>
-                <h2>
-                    <a href="/sunzhe">孙哲</a>
-                </h2>
-                <div class="title-desc"></div>
-            </li>
+            <li><a href="/niube">牛犇</a></li>
         
-            <li>
-                <h2>
-                    <a href="/huajiafeng">华佳烽</a>
-                </h2>
-                <div class="title-desc"></div>
-            </li>
+            <li><a href="/lifenghua">李凤华</a></li>
+        
+            <li><a href="/guoyunchuan">郭云川</a></li>
+        
+        </ul>
+
+        <h2>员工</h2>
+        <ul class="artical-list">
+        
+            <li><a href="/zhoushuguang">周曙光</a></li>
+        
+            <li><a href="/zhangqiaoduo">张巧夺</a></li>
+        
+            <li><a href="/zhanglingcui">张玲翠</a></li>
+        
+            <li><a href="/gengkui">耿魁</a></li>
+        
+        </ul>
+
+        <h2>学生</h2>
+        <ul class="artical-list">
+        
+            <li><a href="/sunzhe">孙哲</a></li>
+        
+            <li><a href="/huajiafeng">华佳烽</a></li>
         
         </ul>
     </div>
-    <div class="aside">
-    </div>
 </div>
-<!--End dump/index.md-->
 
+<script src="/js/post.js" type="text/javascript"></script>
 
-<script type="text/javascript">
-    $(function(){
-        function animateBar($item,noAni){
-            var spanLeft = $item.find('span').offset().left;
-            var conLeft = $item.parent().offset().left;
-            var left = spanLeft - conLeft;
-            var width = $item.find('span').width() + 8;
-
-            if(noAni){
-                $('#cateBar').css({left:left,width:width})
-            }else{
-                $('#cateBar').stop().animate({left:left,width:width},300)
-            }
-        }
-
-        var waitForFinalEvent = (function () {
-            var timers = {};
-            return function (callback, ms, uniqueId) {
-                if (!uniqueId) {
-                    uniqueId = "Don't call this twice without a uniqueId";
-                }
-                if (timers[uniqueId]) {
-                    clearTimeout (timers[uniqueId]);
-                }
-                timers[uniqueId] = setTimeout(callback, ms);
-            };
-        })();
-
-        $('.artical-cate li').mouseenter(function(){
-            animateBar($(this));
-        }).mouseleave(function(){
-            animateBar($('.artical-cate .on'));
-        });
-
-        $(window).resize(function(e){
-            waitForFinalEvent(function(){
-                animateBar($('.artical-cate .on'));
-            })
-        })
-        animateBar($('.artical-cate .on'),true);
-    });
-</script>
-<!--End home.html-->
 </body>
 	<!--canvas--><!--
 	<script type="text/javascript" color="0,0,255" opacity='0.7' zIndex="-2" count="70" src="/js/canvas-nest.js"></script>-->
