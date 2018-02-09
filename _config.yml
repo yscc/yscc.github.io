@@ -23,3 +23,5 @@ keys: 关键字
 url: http://yanshuicc.github.io
 feed: /atom.xml
 author_info: <a href="http://yscc.xyz">yscc</a>
+
+theme: jekyll-theme-cayman
