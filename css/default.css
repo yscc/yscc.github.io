@@ -184,6 +184,7 @@ h3.about {color:#777;margin-top:20px;font-size:22px;margin-bottom:10px}
 table{
     border-collapse: collapse;
     border:2px solid #050505;
+	text-align:center;
 }
 
 th{
@@ -192,6 +193,10 @@ th{
 
 td{
     border:1px solid #000000;
+	width:5px;
 }
 
-
+.list-group-item{
+	text-align:center;
+	padding:10px 10px;
+}
